@@ -54,3 +54,25 @@ for (key, value) in numberOfTires {
     print(value)
 }
 print(numberOfTires)
+
+func kuku(dan:Int) {
+    for n in 1...9 {
+        print(dan * n)
+    }
+}
+
+kuku(dan: 1)
+
+// ラベル（外部引数と内部引数）
+func areaOfTriangle(withBase base:Int, height:Int) {
+    print(base * height / 2)
+}
+// 返り値
+func getAreaOfTriangle(withBase base:Int, height:Int) -> Int {
+    return base * height / 2
+}
+areaOfTriangle(withBase: 3, height: 4)
+print(getAreaOfTriangle(withBase: 3, height: 4))
+
+// ドキュメントなどのprint(_:)は関数の呼び出し時にラベルを付けないということを示す
+// ラベルつけることがデフォルトだから
